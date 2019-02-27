@@ -2,9 +2,7 @@
  <head>
  
 
-	 
-	 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
+	 	
 	
 	
 	 
@@ -125,7 +123,7 @@ span.psw {
 }
 
 /* The Modal (background) */
-.modal {
+.myModal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -140,7 +138,7 @@ span.psw {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.myModal-content {
   background-color: #fefefe;
   border: 1px solid #888;
   width: 300px; /* Could be more or less, depending on screen size */
@@ -258,9 +256,9 @@ window.onload = function() {
    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;font-size: 30px;">Login</button>
    <button onclick="window.location.reload()" style="width:auto;font-size: 30px;">LogOut</button>
 
-<div id="id01" class="modal">
+<div id="id01" class="myModal">
   
-  <div class="modal-content animate">
+  <div class="myModal-content animate">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="https://i.imgur.com/FUWzilM.png" alt="Avatar" class="avatar">
