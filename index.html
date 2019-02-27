@@ -79,25 +79,12 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
 
-button:hover {
-  opacity: 0.8;
-}
 	 
 .myButton {
   background-color: #4CAF50;
   color: white;
-  padding: 14px 20px;
+  padding: 10px 10px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
@@ -250,6 +237,14 @@ console.log("click");
 window.onload = function() {
     document.getElementById("mySubmit").onclick = function load() {
 	authenticate();
+        //validation code to see State field is mandatory.  
+    }
+    document.getElementById("myLogin").onclick = function load() {
+	document.getElementById('id01').style.display='block';
+        //validation code to see State field is mandatory.  
+    }
+    document.getElementById("myLogOut").onclick = function load() {
+	window.location.reload();
         //validation code to see State field is mandatory.  
     }
 }
