@@ -206,9 +206,15 @@ span.psw {
  	
  <script>
 	 
-$('button#mySubmit').on("click", function(e) {
-    console.log("click");
-});
+	 
+	 
+window.onload = function() {
+    document.getElementById("mySubmit").onclick = function load() {
+        alert("hello");
+        //validation code to see State field is mandatory.  
+    }
+}
+
 	 
 
 function authenticate(){
