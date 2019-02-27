@@ -100,7 +100,9 @@ button:hover {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
 }
 
 .myButton:hover {
@@ -268,6 +270,9 @@ window.onload = function() {
 	   
    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;font-size: 30px;">Login</button>
    <button onclick="window.location.reload()" style="width:auto;font-size: 30px;">LogOut</button>
+	   
+	   <div id="myLogin" class="myButton">Login</div>
+	   <div id="myLogOut" class="myButton">Logout</div>
 
 <div id="id01" class="myModal">
   
