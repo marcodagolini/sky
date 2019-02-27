@@ -92,6 +92,20 @@ button {
 button:hover {
   opacity: 0.8;
 }
+	 
+myButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+myButton:hover {
+  opacity: 0.8;
+}
 
 /* Extra styles for the cancel button */
 .cancelbtn {
@@ -270,7 +284,7 @@ window.onload = function() {
       <label><b>Password</b></label>
       <input placeholder="Enter Password" name="myPwd" required>
         
-      <button id="mySubmit">Login</button>
+      <button id="mySubmit" class="myButton">Login</button>
       
     </div>
 
