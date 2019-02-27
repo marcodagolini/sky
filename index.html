@@ -205,18 +205,7 @@ span.psw {
 
  	
  <script>
-	 
-	 
-	 
-window.onload = function() {
-    document.getElementById("mySubmit").onclick = function load() {
-	authenticate();
-        //validation code to see State field is mandatory.  
-    }
-}
-
-	 
-
+	
 function authenticate(){
 	 
  document.getElementById('id01').style.display='block'
@@ -230,6 +219,18 @@ function authenticate(){
          customerId: '1'
      }
  });
+	 
+	 
+window.onload = function() {
+    document.getElementById("mySubmit").onclick = function load() {
+	authenticate();
+        //validation code to see State field is mandatory.  
+    }
+}
+
+	 
+
+
 	
 	console.log("click");
 	
