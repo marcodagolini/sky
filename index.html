@@ -212,6 +212,7 @@ function authenticate(){
 	document.getElementById('myLogin').style.display='none';
 	document.getElementById('myLogOut').style.display='block';
 	
+	console.log("inside");
 	var CurrentLocation = window.location.href;
 	lpTag.newPage(CurrentLocation, {section: "sky"});
 	lpTag.sdes.push({
