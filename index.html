@@ -243,7 +243,7 @@ function authenticate(){
    <form class="myForm" action="">Name: <input class="myInput" type="text" name="FirstName" value="Name"><br>
 	   
    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LogOut</button>
+   <button onclick="window.location.reload()" style="display:block;">LogOut</button>
 
 <div id="id01" class="modal">
   
@@ -260,7 +260,7 @@ function authenticate(){
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
         
-      <button type="submit">Login</button>
+      <button id="submit" type="submit">Login</button>
       
     </div>
 
