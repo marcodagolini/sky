@@ -208,7 +208,9 @@ span.psw {
 	
 function authenticate(){
 	 
- document.getElementById('id01').style.display='none'
+ document.getElementById('id01').style.display='none';
+ document.getElementById('myLogin').style.display='none';
+ document.getElementById('myLogOut').style.display='block';
 	
  var CurrentLocation = window.location.href;
  lpTag.newPage(CurrentLocation, {section: "sky"});
