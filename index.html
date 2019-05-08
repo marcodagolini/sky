@@ -263,6 +263,10 @@ $(window).resize(function() {
 	if(actualRate > rate){
 		console.log("uno");
 	} else{
+		var myAdjustment = window.innerWidth/1360;
+		var myLoginButtonText = Math.round(30*myAdjustment);
+		var myNewFontSize = myLoginButtonText.toString() + 'px';
+		$('.myLoginButton').css('font-size',myNewFontSize);
 		console.log("due");
 	}
 });
