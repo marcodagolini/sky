@@ -258,6 +258,11 @@ function authenticate(){
 }
 	 
 	 
+$(window).resize(function() {
+	console.log($(window).width()/$(window).heigth());
+});
+	 
+	 
 window.onload = function() {
 	console.log("tagging");
 	var CurrentLocation = "https://notAuthenticated";
