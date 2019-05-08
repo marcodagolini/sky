@@ -260,7 +260,7 @@ function authenticate(){
 var rate = 1360/688
 	 
 $(window).resize(function() {
-	var actualRate = window.innerWidth/window.innerHeigth;
+	var actualRate = (window.innerWidth)/(window.innerHeigth);
 	if(actualRate > rate){
 		console.log("uno");
 	} else{
