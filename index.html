@@ -265,8 +265,17 @@ $(window).resize(function() {
 	} else{
 		var myAdjustment = window.innerWidth/1360;
 		var myLoginButtonText = Math.round(30*myAdjustment);
+		var myLoginButtonWidth = Math.round(100*myAdjustment);
+		var myLoginButtonHeight = Math.round(30*myAdjustment);
+		
 		var myNewFontSize = myLoginButtonText.toString() + 'px';
+		var myNewWidth = myLoginButtonWidth.toString() + 'px';
+		var myNewHeight = myLoginButtonHeight.toString() + 'px';
+		
 		$('.myLoginButton').css('font-size',myNewFontSize);
+		$('.myLoginButton').css('width',myNewWidth);
+		$('.myLoginButton').css('height',myNewHeight);
+		
 		console.log("due");
 	}
 });
