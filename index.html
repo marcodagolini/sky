@@ -256,10 +256,16 @@ function authenticate(){
 	}, 3000);
 	
 }
-	 
+
+var rate = 1360/688
 	 
 $(window).resize(function() {
-	console.log($(window).width()/$(window).heigth());
+	var actualRate = $(window).width()/$(window).heigth();
+	if(actualRate > rate){
+		console.log("uno");
+	} else{
+		console.log("due");
+	}
 });
 	 
 	 
